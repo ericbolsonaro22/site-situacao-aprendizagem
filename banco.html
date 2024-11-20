@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icone_progboy.png" type="image/x-icon">
+    <script src="java_menu.js" defer></script>
+</head>
+<body>            
+    <header>
+        <div id="logo_progboy">
+            <a href="index.html">
+                <img class="logo_progboy" src="logo_progboy2.png" alt="logo progboy">
+            </a>
+        </div>
+        <nav class="menu">
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <ul class="menu-links" id="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="banco.html">Banco de Dados</a></li>
+                    <li><a href="programacao.html">Programação</a></li>
+                    <li><a href="componentes.html">Eletroeletrônica</a></li>
+                    <li><a href="redes.html">Redes</a></li>
+                    <li><a href="algoritmos_ordenacao.html">Algoritmos de Ordenação</a></li>
+                    <li><a href="fluxograma.html">Algoritmos e Fluxogramas</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>O que é um Banco de Dados?</h1>
+        <br>
+        <p>Um <strong>banco de dados</strong> é uma coleção organizada de dados que são armazenados e gerenciados de forma eficiente para possibilitar a recuperação e manipulação rápida dessas informações. Eles são essenciais para 
+        empresas e aplicativos que precisam armazenar grandes volumes de dados, como clientes, produtos, transações financeiras, entre outros. A estrutura do banco de dados garante a integridade e a consistência dos dados, permitindo que sejam acessados 
+        por usuários ou sistemas de forma controlada.</p>
+        <div class="espaco"></div>
+        <h1>Banco de Dados Relacional</h1>
+        <br>
+        <p>Um <strong>banco de dados relacional</strong> (RDBMS - <strong>Relational Database Management System</strong>) é um tipo de banco de dados que armazena os dados em tabelas organizadas por colunas e linhas, de forma similar a uma planilha. As tabelas podem ser relacionadas entre si 
+        por meio de chaves primárias e estrangeiras. 
+        <br><br>
+        Exemplos de sistemas de gerenciamento de banco de dados relacionais incluem o <strong>MySQL, PostgreSQL, Oracle</strong> e <strong>SQL Server</strong>. A principal característica dos bancos de dados relacionais é que eles seguem o modelo relacional, que é baseado em teorias matemáticas de conjuntos e álgebra relacional.
+        <br><br>
+        <strong>Características principais:</strong>
+        <br><br>
+        <li>Dados organizados em tabelas.</li>
+        <br>
+        <li>Tabelas podem ser relacionadas entre si.</li>
+        <br>
+        <li>Utilizam SQL (Structured Query Language) para consultas e manipulação de dados.</li>   
+        </p>
+        <div class="espaco"></div>
+        <h1>Banco de Dados Não Relacional</h1>
+        <br>
+        <p>Um <strong>banco de dados não relacional</strong> (NoSQL) é uma categoria de sistemas de banco de dados que não utilizam o modelo relacional tradicional. Esses bancos de dados são projetados para lidar com grandes volumes de dados não estruturados ou semi-estruturados, 
+        como textos, imagens ou vídeos. Eles são especialmente úteis em cenários de big data e aplicações que exigem alta escalabilidade e flexibilidade.
+        <br><br>
+        <h3>Exemplos de bancos de dados não relacionais:</h3>
+        <br>
+        <li>MongoDB (documento)</li>
+        <br>
+        <li>Cassandra (coluna)</li>
+        <br>
+        <li>Redis (chave-valor)</li>
+        <br>
+        <li>Neo4j (grafos)</li>
+        <br><br>
+        <h3>Características principais:</h3>
+        <br>
+        <li>Flexibilidade no modelo de dados.</li>
+        <br>
+        <li>Escalabilidade horizontal.</li>
+        <br>
+        <li>Alta performance para grandes volumes de dados.</li>
+        <br>
+        <li>Não utilizam SQL tradicional, mas APIs específicas para consulta.</li>
+        </p>
+        <div class="espaco"></div>
+        <h1>O que é um Diagrama Conceitual (DER)?</h1>
+        <br>
+        <p>Um <strong>Diagrama Entidade-Relacionamento (DER)</strong> ou <strong>Diagrama Conceitual</strong> é uma representação gráfica das entidades de um sistema e os relacionamentos entre elas. O objetivo do DER é capturar a estrutura do banco de dados de forma abstrata, sem se preocupar com detalhes
+        de implementação. As entidades podem ser, por exemplo, "Cliente", "Produto", "Pedido", e os relacionamentos entre elas podem ser "faz um", "pertence a", etc.
+        <br><br>
+        <img src="conceitual.png" class="img_redes">
+        <br><br>
+        <h3>Componentes principais do DER:</h3>
+        <br>
+        <li><strong>Entidades:</strong> Representam objetos ou conceitos do mundo real (normalmente representados por retângulos).</li>
+        <br>
+        <li><strong>Relacionamentos:</strong> Indicam como as entidades estão relacionadas (representados por losangos).</li>
+        <br>
+        <li><strong>Atributos:</strong> Características das entidades, como nome ou preço (representados por elipses).</li>
+        </p>
+        <div class="espaco"></div>
+        <h1>O que é um Diagrama Lógico (MER)?</h1>
+        <br>
+        <p>O <strong>Diagrama Lógico de Entidade-Relacionamento (MER)</strong> é uma versão mais detalhada e refinada do DER, na qual o modelo conceitual é transformado em um modelo
+        mais próximo de implementação. O MER leva em conta as características específicas do banco de dados relacional, como tipos de dados, cardinalidades e chaves.
+        <br><br>
+        <img src="logico.png" class="img_redes">
+        <br><br>
+        <h3>Componentes principais do MER:</h3>
+        <br>
+        <li><strong>Entidades:</strong>  Representadas por retângulos.</li>
+        <br>
+        <li><strong>Relacionamentos:</strong> Representados por losangos.</li>
+        <br>
+        <li><strong>Atributos:</strong> Detalham as propriedades das entidades e relacionamentos.</li>
+        <br>
+        <li><strong>Cardinalidade:</strong> Define o número de instâncias de uma entidade que podem estar associadas a outra entidade no relacionamento.</li>
+        <br><br>
+        </p>
+        <p>A <strong>principal diferença</strong> entre o <strong>DER</strong> e o <strong>MER</strong> é que, enquanto o DER é um modelo conceitual, o MER já aborda questões de estrutura de dados mais específicas e ajuda na definição das tabelas e suas chaves.</p>
+        <div class="espaco"></div>
+        <h1>Exemplos de Diagramas DER e MER</h1>
+        <br>
+        <p>Os diagramas <strong>DER</strong> e <strong>MER</strong> são comuns no processo de design de um banco de dados, mas, como eles são gráficos, não consigo gerar imagens diretamente aqui. No entanto, para ilustrar:</p>
+        <br>
+        <p><li><strong>DER:</strong></li></p>
+        <br><br>
+        <img src="gerenciamento_voo.png" class="img_redes">
+        <br><br><br>
+        <p><li><strong>MER:</strong> Esse mesmo modelo no MER poderia envolver detalhes sobre tipos de dados, como "cod_cliente" sendo um inteiro e "Email" sendo uma string de tamanho variável, além da definição de chaves primárias e estrangeiras.</li></p>
+        <div class="espaco"></div>
+        <h1>Quais Bancos de Dados a Empresa Trabalha?</h1>
+        <br>
+        <p>A escolha do banco de dados depende das necessidades da empresa. Alguns fatores que influenciam essa decisão incluem o tipo de dados a serem armazenados, o volume de informações, a necessidade de escalabilidade e a facilidade de integração com outras tecnologias.</p>
+        <br><br>
+        <h2>Exemplos de bancos de dados que a empresa pode usar:</h2>
+        <br>
+        <p><li><strong>MySQL, PostgreSQL, MongoDB</strong> e <strong>Microsoft SQL Server</strong></li></p>
+        <div class="espaco"></div>
+        <h1>O que é um Dicionário de Dados?</h1>
+        <br>
+        <p>O <strong>dicionário de dados</strong> é um repositório centralizado que descreve os dados que são armazenados em um banco de dados. Ele contém informações detalhadas sobre as entidades, atributos, relacionamentos, tipos de dados, restrições e outras características dos dados. O dicionário de dados
+        é essencial para o gerenciamento de um banco de dados, pois fornece um ponto de referência para desenvolvedores, administradores de banco de dados e analistas.</p>
+        <br><br>
+        <img src="print_dicionario_de_dados.png" class="img_redes">
+        <br><br>
+        <p>Um dicionário de dados é uma parte fundamental do processo de design de um banco de dados, pois ajuda a garantir a clareza e a consistência dos dados dentro da organização.</p>
+    </section>
+    <footer>
+        <p>Todos os direitos reservados, ProgBoy &copy;</p>
+    </footer>
+</body>
+</html>
+    

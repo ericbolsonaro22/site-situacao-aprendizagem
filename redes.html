@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icone_progboy.png" type="image/x-icon">
+    <script src="java_menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo_progboy">
+            <a href="index.html">
+                <img class="logo_progboy" src="logo_progboy2.png" alt="logo progboy">
+            </a>
+        </div>
+        <nav class="menu">
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <ul class="menu-links" id="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="banco.html">Banco de Dados</a></li>
+                    <li><a href="programacao.html">Programação</a></li>
+                    <li><a href="componentes.html">Eletroeletrônica</a></li>
+                    <li><a href="redes.html">Redes</a></li>
+                    <li><a href="algoritmos_ordenacao.html">Algoritmos de Ordenação</a></li>
+                    <li><a href="fluxograma.html">Algoritmos e Fluxogramas</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Redes e Configuração de Servidores</h1>
+        <br>
+        <p>A criação e configuração de uma rede interna em que um servidor web (HTTP), um servidor DNS e um servidor DHCP estão inseridos 
+        envolve diversos elementos e componentes de rede, que podem ser simulados utilizando ferramentas como o Cisco Packet Tracer. 
+        Abaixo, vamos detalhar os conceitos e a configuração necessária para o funcionamento desses servidores, além de fornecer um 
+        panorama geral dos equipamentos de rede e sua função.</p>
+        <br>
+        <img src="" class="">
+        <div class="espaco"></div>
+        <h1>Equipamentos e Suas Funções</h1>
+        <br>
+        <p><li class="style_li"><strong>Roteador:</strong> Encaminha pacotes entre redes diferentes (por exemplo, entre a rede local e a
+        internet).</li><br>
+        <li class="style_li"><strong>Switch:</strong> Conecta dispositivos dentro de uma mesma rede local (LAN) e permite a comunicação 
+        interna.</li><br>
+        <li class="style_li"><strong>Access Point (AP):</strong> Fornece conectividade sem fio aos dispositivos na rede.</li><br>
+        <li class="style_li"><strong>Firewall:</strong> Controla e monitora o tráfego de dados entre redes, ajudando a proteger contra 
+        acessos não autorizados.</li></p>
+        <br><br>
+        <div id="img_redes">
+            <img class="img_redes" src="rede01.png" alt="Rede 1">
+        </div>
+        <div class="espaco"></div>
+        <h1>Conceito de Servidor</h1>
+        <br>
+        <p>Um servidor é um dispositivo ou software que oferece serviços, recursos ou dados para outros dispositivos (clientes) na rede. 
+        Exemplo: Servidores de arquivos, servidores web, servidores de banco de dados, entre outros.</p>
+        <div class="espaco"></div>
+        <h1>Servidores e Suas Funções</h1>
+        <br>
+        <p><li class="style_li"><strong>Servidor DNS (Domain Name System):</strong> O servidor DNS traduz nomes de domínio em endereços IP. 
+        Isso permite que os usuários acessem sites usando nomes amigáveis, como "www.exemplo.com", em vez de precisar memorizar os endereços
+        IP numéricos.</li><br>
+        <li class="style_li"><strong>Servidor HTTP (HyperText Transfer Protocol):</strong> O servidor HTTP é responsável por hospedar páginas
+        web e enviá-las aos navegadores dos usuários quando solicitadas. Ele utiliza o protocolo HTTP para receber requisições de 
+        páginas e enviar respostas com o conteúdo solicitado.</li><br>
+        <li class="style_li"><strong>Servidor DHCP (Dynamic Host Configuration Protocol):</strong> O servidor DHCP atribui automaticamente 
+        endereços IP aos dispositivos na rede. Ele elimina a necessidade de configuração manual de endereços, facilitando a administração
+        da rede e a conexão de novos dispositivos.</li></p>
+        <br><br>
+        <div id="img_redes">
+            <img class="img_redes" src="configuracao_endereco_servidor_dhcp_ip_fixo.png" alt="Configuração de Servidor">
+            <img class="img_redes" src="configuracao_service_dhcp_40_maquinas.png" alt="Configuração de Rede">
+        </div>
+        <div class="espaco"></div>
+        <h1>Modelos de Redes e Protocólos</h1>
+        <br>
+        <h2>Modelo OSI</h2>
+        <br>
+        <p>O <strong>Modelo OSI</strong> é um modelo de referência teórico que descreve como os dados são transmitidos entre dispositivos em uma rede. Ele é 
+        dividido em 7 camadas, desde a Camada Física (que lida com os sinais elétricos e a transmissão de dados) até a Camada de 
+        Aplicação (onde ocorrem as interações diretas com os usuários e os programas, como navegadores web).</p>
+        <br><br>
+        <h2>Modelo TCP/IP</h2>
+        <br>
+        <p>O <strong>modelo TCP/IP</strong> é a base para a comunicação na internet e tem 4 camadas principais:</p>
+        <br>
+        <p><li class="style_li"><strong>Camada de Aplicação:</strong> Onde ocorrem as interações com os aplicativos (ex.: HTTP, FTP).</li><br>
+        <li class="style_li"><strong>Camada de Transporte:</strong> Controla o fluxo de dados e garante que cheguem ao destino (ex.: TCP, UDP).</li><br>
+        <li class="style_li"><strong>Camada de Internet:</strong> Lida com endereçamento e roteamento de pacotes (ex.: IP).</li><br>
+        <li class="style_li"><strong>Camada de Acesso à Rede:</strong> Controla a comunicação física entre dispositivos na rede (ex.: Ethernet).</li></p>
+        <div class="espaco"></div>
+        <h1>Cabos de Rede - Pinagem</h1>
+        <br>
+        <p>Os cabos Ethernet são usados para conectar dispositivos em uma rede local. O conector mais comum é o RJ45, e a pinagem pode seguir dois padrões:
+        T568A ou T568B. Ambos os padrões definem a ordem dos fios dentro do cabo, mas a escolha entre eles depende da padronização da rede.</p>
+        <br><br>
+        <h2>Crimpagem de Cabos de Rede:</h2>
+        <br><br>
+        <p>Oferecemos serviço especializado de crimpagem de cabos de rede, garantindo conexões rápidas e seguras. Com equipamentos de alta qualidade, realizamos a montagem e manutenção de cabos RJ45, atendendo empresas de todos os portes.
+        Conte conosco para otimizar sua infraestrutura de TI com eficiência e confiabilidade.</p>
+        <br><br>
+        <img src="crimpagem.png" class="img_redes">
+    </section>
+    <footer> 
+        <p>Todos os direitos reservados, ProgBoy &copy;</p>
+    </footer>
+</body>
+</html>

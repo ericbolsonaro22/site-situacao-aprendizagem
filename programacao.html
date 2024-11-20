@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo_cunha_enterprise.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="icone_progboy.png" type="image/x-icon">
+    <script src="java_menu.js" defer></script>
+    <title>Programação</title>
+</head>
+<body>
+    <header>
+        <div id="logo_progboy">
+            <a href="index.html">
+                <img class="logo_progboy" src="logo_progboy2.png" alt="logo progboy">
+            </a>
+        </div>
+        <nav class="menu">
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <ul class="menu-links" id="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="banco.html">Banco de Dados</a></li>
+                    <li><a href="programacao.html">Programação</a></li>
+                    <li><a href="componentes.html">Eletroeletrônica</a></li>
+                    <li><a href="redes.html">Redes</a></li>
+                    <li><a href="algoritmos_ordenacao.html">Algoritmos de Ordenação</a></li>
+                    <li><a href="fluxograma.html">Algoritmos e Fluxogramas</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="questProva1" class="programacao">
+            <h2>Somando de 2 matrizes</h2>
+            <hr class="hr-especial">
+            <p>Elabore um programa que gera duas matrizes uma matriz 7 x 7, sendo uma
+                do tipo do tipo diagonal secundária, cujos os elementos da diagonal secundária
+                são iguais a 5 e outra matriz diagonal principal, cujos elementos são iguais a 7.
+                Após gerar as duas matrizes, faça a soma entre elas. Use o laço “for” para
+                elaborar a lógica do programa.</p>
+            <hr class="hr-especial">
+            <div class="button">
+                <button onclick="ex1Prova()">Calcular</button>
+            </div>
+        </section>
+        <hr>
+        <section id="questProva2" class="programacao">
+            <h2>Soma de números Pares e Ímpares </h2>
+            <hr class="hr-especial">
+            <p>Elabore um programa que gera uma matriz 7 x 7 com números aleatórios em
+                um intervalo de 1 à 20. Após gerar a matriz, faça a soma dos números pares e
+                ímpares da matriz separadamente. Use o laço “for” para elaborar a lógica do
+                programa.</p>
+            <hr class="hr-especial">
+            <div class="buuton">
+                <button onclick="ex2Prova()">Calcular</button>
+            </div>
+        </section>
+        <hr>
+        <section id="questProva3" class="programacao">
+            <h2>Soma das Colunas Ímpares</h2>
+            <hr class="hr-especial">
+            <p>Elabore um programa que gera uma matriz 8 x 8 de números aleatórios em
+                um intervalo de 1 à 50. Faça a soma dos elementos das colunas cujos os índices
+                são ímpares. Use o laço “for” para elaborar a lógica do programa.</p>
+            <hr class="hr-especial">
+            <div class="button">
+                <button onclick="ex3Prova()">Calcular</button>
+            </div>
+        </section>
+        <hr>
+        <section id="for" class="programacao">
+            <h2>Programa com laço FOR</h2>
+            <hr class="hr-especial">
+            <p>Cria uma array de 10 elementos aleatórios usando o laço for ordena eles e enseguida tira cada elemento na lógica de array PILHA utilizando um laço FOR.</p>
+            <hr class="hr-especial">
+            <div class="button">
+                <button onclick="exLacoFor()">Calcular</button>
+            </div>
+        </section>
+        <hr>
+        <section id="while" class="programacao">
+            <h2>Programa com laço WHILE</h2>
+            <hr class="hr-especial">
+            <p>Gera um número aleatório entre 1 à 20. e apartir de um laço WHILE enquanto ele for menor que 0 ele subtrai um número dele mesmo.</p>
+            <hr class="hr-especial">
+            <div class="button">
+                <button onclick="exLacoWhile()">Calcular</button>
+            </div>
+        </section>
+        <hr>
+        <section id="if" class="programacao">
+            <h2>IF-ELSE - Idade apta a Votar</h2>
+            <hr class="hr-especial">
+            <p>Gera um número aleatório entre 100 e -10 aonde será representado como idade, e apartir de uma estrutura IF-ELSE ele falará se essa idade é apta a votar, ou se opcional ou inválida</p>
+            <hr class="hr-especial">
+            <div class="button">
+                <button onclick="exIfElse()">Calcular</button>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer>
+        <p>Todos os direitos reservados, ProgBoy &copy;</p>
+    </footer>
+</body>
+</html>
